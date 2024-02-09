@@ -38,7 +38,7 @@ export function Home() {
                 </Text>
 
                 <View style={styles.area}>
-                    <Slider style={styles.slider} value={size} onValueChange={(value) => { setSize(value.toFixed(0)) }} minimumValue={0} maximumValue={20} minimumTrackTintColor='#000' thumbTintColor='#000' />
+                    <Slider style={styles.slider} value={size} onValueChange={(value) => { setSize(value.toFixed(0)) }} minimumValue={5} maximumValue={10} minimumTrackTintColor='#000' thumbTintColor='#000' />
                 </View>
                 <TouchableOpacity style={styles.button} onPress={generatePassword}>
                     <Text style={{ color: '#fff', fontWeight: 'bold' }}>Gerar Senha</Text>
